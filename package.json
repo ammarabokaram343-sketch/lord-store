@@ -1,0 +1,14 @@
+{
+  "name": "lord-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LORD Arabic automotive and motorcycle accessories online store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
