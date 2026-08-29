@@ -177,7 +177,7 @@ app.put("/api/admin/orders/:id",auth,(req,res)=>{
 });
 
 app.get("/admin",(req,res)=>res.sendFile(path.join(ROOT,"public","admin.html")));
-app.get("*",(req,res)=>{
+app.get("/*",
   if(req.path.startsWith("/api/")) return res.status(404).json({error:"غير موجود"});
   res.sendFile(path.join(ROOT,"public","index.html"));
 });
